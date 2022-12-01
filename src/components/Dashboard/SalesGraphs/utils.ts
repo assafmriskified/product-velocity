@@ -14,7 +14,7 @@ export const getPriceChartsData = (
 ): ChartData[] => {
     const data: ChartData[] = [[]];
     const lists = dataJson[id];
-    data[0].push(getChart("price count", lists.price, ElmColorCode.Blue400))
+    data[0].push(getChart("Price", lists.price, ElmColorCode.Blue400))
     data[0].push(getChart("Sales count", lists.sales, ElmColorCode.Gray400))
     return data;
 };

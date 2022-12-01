@@ -19,7 +19,7 @@ const buildChartConfig = (isStacked: boolean): ChartExtraConfig => ({
     },
     legend: {
         position: 'left',
-        title: {isEnabled: true, caption: 'Title', tooltip: 'Tooltip'},
+        title: {isEnabled: true, caption: 'Inventory to sales', tooltip: 'Inventory - sales over time'},
         seriesAggregationInfo: {isEnabled: true},
     },
     units: {

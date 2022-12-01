@@ -5,6 +5,7 @@ import DateFilter from "./DateFilter";
 import ProductList from "./ProductList/ProductList";
 import ProductScorecard from "./ProductScorecard/ProductScorecard";
 
+
 const Container = styled.div`
     display: flex;
     flex-direction: column;
@@ -26,7 +27,7 @@ interface DashboardProps {
     id: number,
 }
 const initialState : DashboardProps = {
-    productName: 'nintendo-switch',
+    productName: 'Nintendo Switch',
     id: 0,
 }
 
@@ -39,7 +40,7 @@ const Dashboard = (): JSX.Element => {
                 <DateFilter></DateFilter>
             </TopNav>
             <MainContainer>
-                <ProductScorecard product={value.productName} merchantName={'Best Buy'}></ProductScorecard>
+                <ProductScorecard product={value.productName} merchantName={'Riskistore'}></ProductScorecard>
                 <ProductList value={value} setValue={setValue}></ProductList>
                 <CountChart productId={value.id} loading={false} noData='none' isEmpty={false}/>
                 <InventoryCharts productId={value.id} loading={false} noData='none' isEmpty={false}/>

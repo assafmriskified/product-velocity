@@ -19,11 +19,11 @@ const buildChartConfig = (isStacked: boolean): ChartExtraConfig => ({
     },
     legend: {
         position: 'left',
-        title: {isEnabled: true, caption: 'Title', tooltip: 'Tooltip'},
+        title: {isEnabled: true, caption: 'Price to sales', tooltip: 'price - sales over time'},
         seriesAggregationInfo: {isEnabled: true},
     },
     units: {
-        type: 'currency',
+        type: 'number',
     },
 });
 

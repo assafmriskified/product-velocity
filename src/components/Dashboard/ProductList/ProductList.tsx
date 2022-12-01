@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Dropdown, OptionType} from "@riskified/elmo-components";
 import styles from './ProductList.module.css'
 
@@ -7,9 +7,9 @@ const ProductList = (props: any): JSX.Element => {
     const productsJson = {
         products:
             [
-                {id:0,productName:"nintendo-switch", inventoryCount: 3450},
-                {id:1,productName:"coffe-machine", inventoryCount: 1000},
-                {id:2,productName:"bose-headphones", inventoryCount: 40}
+                {id:0,productName:"Nintendo Switch", inventoryCount: 3450},
+                {id:1,productName:"Coffee Machine", inventoryCount: 1000},
+                {id:2,productName:"Bose Headphones", inventoryCount: 40}
             ]
     }
 
