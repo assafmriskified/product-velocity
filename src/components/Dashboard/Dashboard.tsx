@@ -4,6 +4,7 @@ import {CountChart, InventoryCharts} from "./SalesGraphs";
 import DateFilter from "./DateFilter";
 import ProductList from "./ProductList/ProductList";
 import ProductScorecard from "./ProductScorecard/ProductScorecard";
+import logo from "../../image.png";
 
 
 const Container = styled.div`
@@ -37,7 +38,12 @@ const Dashboard = (): JSX.Element => {
     return (
         <Container>
             <TopNav>
+              <div>
+                <img src={logo} alt="Logo" width={"30%"}/>
+              </div>
+              <div>
                 <DateFilter></DateFilter>
+              </div>
             </TopNav>
             <MainContainer>
                 <ProductScorecard product={value.productName} merchantName={'Riskistore'}></ProductScorecard>
